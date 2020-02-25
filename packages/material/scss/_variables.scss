@@ -620,6 +620,7 @@ $button-border: $button-bg !default;
 /// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: null !default;
+$button-pressed-shadow-inset: null !default;
 $button-shadow: $box-shadow-depth-2 !default;
 
 /// The background of hovered buttons.
@@ -658,6 +659,7 @@ $button-pressed-shadow: $box-shadow-depth-3 !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
+$button-focused-shadow-inset: null !default;
 $button-focused-shadow: null !default;
 
 
@@ -681,8 +683,10 @@ $primary-button-pressed-bg: $primary-button-bg !default;
 $primary-button-pressed-text: null !default;
 $primary-button-pressed-border: $primary-button-pressed-bg !default;
 $primary-button-pressed-gradient: null !default;
+$primary-button-pressed-shadow-inset: inset !default;
 $primary-button-pressed-shadow: null !default;
 
+$primary-button-focused-shadow-inset: null !default;
 $primary-button-focused-shadow: null !default;
 
 $flat-button-hover-opacity: .12 !default;

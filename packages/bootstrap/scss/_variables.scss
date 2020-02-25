@@ -615,11 +615,13 @@ $button-pressed-border: try-darken( $button-border, 12.5% ) !default;
 /// The background gradient of pressed buttons.
 /// @group buttons
 $button-pressed-gradient: null !default;
+$button-pressed-shadow-inset: null !default;
 $button-pressed-shadow: null !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
+$button-focused-shadow-inset: null !default;
+$button-focused-shadow: $button-focused-shadow-inset 0 0 0 3px rgba($button-border, .5) !default;
 
 
 // Disabled button
@@ -642,9 +644,11 @@ $primary-button-pressed-bg: try-darken( $primary-button-bg, 10% ) !default;
 $primary-button-pressed-text: contrast-wcag( $primary-button-pressed-bg ) !default;
 $primary-button-pressed-border: try-darken( $primary-button-border, 12.5% ) !default;
 $primary-button-pressed-gradient: null !default;
-$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-pressed-shadow-inset: inset !default;
+$primary-button-pressed-shadow: $primary-button-pressed-shadow-inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
-$primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5) !default;
+$primary-button-focused-shadow-inset: null !default;
+$primary-button-focused-shadow: $primary-button-focused-shadow-inset 0 0 0 3px rgba($primary-button-border, .5) !default;
 
 $flat-button-hover-opacity: .08 !default;
 $flat-button-focused-opacity: null !default;
