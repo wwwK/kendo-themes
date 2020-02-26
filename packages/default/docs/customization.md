@@ -246,7 +246,7 @@ The following table lists the available variables for customizing the Default th
     <tr>
       <td>$button-focused-shadow</td>
       <td>
-          0 3px 4px 0 rgba(0, 0, 0, .06)
+          $button-focused-shadow-inset 0 3px 4px 0 rgba(0, 0, 0, .06)
       </td>
       <td>The shadow of focused buttons.</td>
     </tr>
