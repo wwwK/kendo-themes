@@ -1,0 +1,73 @@
+// Header
+$header-padding-x-xs: map-get( $spacing, 1 ) !default;
+$header-padding-y-xs: map-get( $spacing, 1 ) !default;
+$header-font-size-xs: $font-size-sm !default;
+$header-line-height-xs: 1.25 !default;
+
+$header-padding-x-sm: map-get( $spacing, 2 ) !default;
+$header-padding-y-sm: map-get( $spacing, 2 ) !default;
+$header-font-size-sm: $font-size-sm !default;
+$header-line-height-sm: 1.25 !default;
+
+$header-padding-x-md: map-get( $spacing, 3 ) !default;
+$header-padding-y-md: map-get( $spacing, 2 ) !default;
+$header-font-size-md: $font-size-md !default;
+$header-line-height-md: $line-height-md !default;
+
+$header-padding-x-lg: map-get( $spacing, 4 ) !default;
+$header-padding-y-lg: map-get( $spacing, 3 ) !default;
+$header-font-size-lg: 16px !default;
+$header-line-height-lg: ( 20 / 16 ) !default;
+
+$header-padding-x-xl: map-get( $spacing, 4 ) !default;
+$header-padding-y-xl: map-get( $spacing, 3 ) !default;
+$header-font-size-xl: 20px !default;
+$header-line-height-xl: 1 !default;
+
+
+$header-theme-colors: $theme-colors !default;
+
+@function header-contrast-theme($name: null, $color: null) {
+    // sass-lint:disable indentation
+    @return (
+        border: $color,
+        color: contrast-wcag( $color ),
+        bg: $color
+    );
+    // sass-lint:enable indentation
+}
+@function header-theme($name: null, $color: null) {
+    // sass-lint:disable indentation
+    @return (
+        border: try-shade( $color, 4 ),
+        color: try-shade( $color, 4 ),
+        bg: try-tint( $color, 11 )
+    );
+    // sass-lint:enable indentation
+}
+
+$header-themes: (
+    primary: header-contrast-theme( primary, map-get( $header-theme-colors, primary ) ),
+    secondary: header-contrast-theme( secondary, map-get( $header-theme-colors, secondary ) ),
+    tertiary: header-contrast-theme( tertiary, map-get( $header-theme-colors, tertiary ) ),
+    info: header-contrast-theme( info, map-get( $header-theme-colors, info ) ),
+    success: header-contrast-theme( success, map-get( $header-theme-colors, success ) ),
+    warning: header-contrast-theme( warning, map-get( $header-theme-colors, warning ) ),
+    error: header-contrast-theme( error, map-get( $header-theme-colors, error ) ),
+    dark: header-contrast-theme( dark, map-get( $header-theme-colors, dark ) ),
+    light: header-contrast-theme( light, map-get( $header-theme-colors, light ) ),
+    inverse: header-contrast-theme( inverse, map-get( $header-theme-colors, inverse ) )
+);
+
+
+$header-config: (
+    sizes: (
+        xs: (),
+        sm: (),
+        md: (),
+        lg: (),
+        xl: ()
+    ),
+    colors: $header-theme-colors,
+    themes: $header-themes
+) !default;

@@ -1,0 +1,11 @@
+@include exports( "header/theme" ) {
+
+    @each $theme, $props in $header-themes {
+        .k-header-#{$theme} {
+            border-color: map-get( $props, border );
+            color: map-get( $props, color );
+            background-color: map-get( $props, bg );
+        }
+    }
+
+}

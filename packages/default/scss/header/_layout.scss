@@ -1,0 +1,35 @@
+@include exports( "header/layout" ) {
+
+    .k-header {
+        border-width: 0;
+        border-style: solid;
+    }
+
+    // Header sizes
+    .k-header-xs {
+        padding: $header-padding-y-xs $header-padding-x-xs;
+        font-size: $header-font-size-xs;
+        line-height: $header-line-height-xs;
+    }
+    .k-header-sm {
+        padding: $header-padding-y-sm $header-padding-x-sm;
+        font-size: $header-font-size-sm;
+        line-height: $header-line-height-sm;
+    }
+    .k-header-md {
+        padding: $header-padding-y-md $header-padding-x-md;
+        font-size: $header-font-size-md;
+        line-height: $header-line-height-md;
+    }
+    .k-header-lg {
+        padding: $header-padding-y-lg $header-padding-x-lg;
+        font-size: $header-font-size-lg;
+        line-height: $header-line-height-lg;
+    }
+    .k-header-xl {
+        padding: $header-padding-y-xl $header-padding-x-xl;
+        font-size: $header-font-size-xl;
+        line-height: $header-line-height-xl;
+    }
+
+}
