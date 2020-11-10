@@ -1,102 +1,114 @@
-@include exports("panelbar/theme") {
+@include exports( "panelbar/theme" ) {
 
+    // Panelbar
     .k-panelbar {
-        @extend .k-text-selection !optional;
         @include fill(
             $panelbar-text,
             $panelbar-bg,
             $panelbar-border
         );
+    }
 
 
-        // Root
-        > .k-item {
+    // Panelbar header
+    .k-panelbar-header,
+    .k-panelbar > .k-item {
+        border-color: $panelbar-header-border;
 
-            > .k-link {
-                @include fill(
-                    $panelbar-header-text,
-                    $panelbar-header-bg,
-                    $panelbar-header-border,
-                    $panelbar-header-gradient
-                );
-
-                .k-icon {
-                    color: $panelbar-text;
-                }
-            }
-
-            &.k-state-active > .k-link,
-            &.k-state-expanded > .k-link {
-                color: inherit;
-                background-color: transparent;
-                font-weight: 500;
-            }
-
-            > .k-link:hover,
-            > .k-link.k-state-hover {
-                @include fill(
-                    $panelbar-header-hovered-text,
-                    $panelbar-header-hovered-bg,
-                    $panelbar-header-hovered-border,
-                    $panelbar-header-hovered-gradient
-                );
-            }
-
-            > .k-link.k-state-selected {
-                @include fill(
-                    $panelbar-header-selected-text,
-                    $panelbar-header-selected-bg,
-                    $panelbar-header-selected-border,
-                    $panelbar-header-selected-gradient
-                );
-
-                .k-icon {
-                    color: inherit;
-                }
-
-                &:hover,
-                &.k-state-hover {
-                    background-color: shade( $panelbar-header-selected-bg );
-                }
-            }
-
-            > .k-link.k-state-focused {
-                box-shadow: $panelbar-header-focused-shadow;
-            }
+        > .k-link {
+            @include fill(
+                $panelbar-header-text,
+                $panelbar-header-bg,
+                $panelbar-header-border,
+                $panelbar-header-gradient
+            );
         }
 
 
-        // Sub
-        .k-group {
+        // Expanded state
+        &.k-state-expanded > .k-link {
+            border-color: transparent;
+            color: inherit;
+            background-color: transparent;
+            background-image: none;
+        }
 
-            > .k-item > .k-link:hover,
-            > .k-item > .k-link.k-state-hover {
-                @include fill(
-                    $panelbar-item-hovered-text,
-                    $panelbar-item-hovered-bg,
-                    $panelbar-item-hovered-border,
-                    $panelbar-item-hovered-gradient
-                );
+
+        // Hover state
+        > .k-link:hover,
+        > .k-link.k-state-hover {
+            @include fill(
+                $panelbar-header-hovered-text,
+                $panelbar-header-hovered-bg,
+                $panelbar-header-hovered-border,
+                $panelbar-header-hovered-gradient
+            );
+        }
+
+
+        // Focus state
+        > .k-link:focus,
+        > .k-link.k-state-focus,
+        > .k-link.k-state-focused {
+            box-shadow: $panelbar-header-focused-shadow;
+        }
+
+
+        // Selected state
+        > .k-link.k-state-selected {
+            @include fill(
+                $panelbar-header-selected-text,
+                $panelbar-header-selected-bg,
+                $panelbar-header-selected-border,
+                $panelbar-header-selected-gradient
+            );
+
+            &:hover,
+            &.k-state-hover {
+                background-color: try-shade( $panelbar-header-selected-bg );
             }
+        }
 
-            > .k-item > .k-link.k-state-selected {
-                @include fill(
-                    $panelbar-item-selected-text,
-                    $panelbar-item-selected-bg,
-                    $panelbar-item-selected-border,
-                    $panelbar-item-selected-gradient
-                );
+    }
 
-                &:hover,
-                &.k-state-hover {
-                    background-color: shade( $panelbar-item-selected-bg );
-                }
+
+    // Panelbar item
+    .k-panelbar-item,
+    .k-panelbar .k-group {
+
+        // Hover state
+        > .k-item > .k-link:hover,
+        > .k-item > .k-link.k-state-hover {
+            @include fill(
+                $panelbar-item-hovered-text,
+                $panelbar-item-hovered-bg,
+                $panelbar-item-hovered-border,
+                $panelbar-item-hovered-gradient
+            );
+        }
+
+
+        // Focus state
+        > .k-item > .k-link:focus,
+        > .k-item > .k-link.k-state-focus,
+        > .k-item > .k-link.k-state-focused {
+            box-shadow: $panelbar-item-focused-shadow;
+        }
+
+
+        // Selected state
+        > .k-item > .k-link.k-state-selected {
+            @include fill(
+                $panelbar-item-selected-text,
+                $panelbar-item-selected-bg,
+                $panelbar-item-selected-border,
+                $panelbar-item-selected-gradient
+            );
+
+            &:hover,
+            &.k-state-hover {
+                background-color: try-shade( $panelbar-item-selected-bg );
             }
-
-            > .k-item > .k-link.k-state-focused {
-                box-shadow: $panelbar-item-focused-shadow;
-            }
-
         }
 
     }
