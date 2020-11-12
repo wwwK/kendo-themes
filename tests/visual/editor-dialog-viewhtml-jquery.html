@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor view source dialog jQuery</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+
+        .k-dialog {
+            width: 500px;
+            height: 400px;
+        }
+
+        .k-window {
+            width: 600px;
+            height: 445px;
+            left: 45px;
+            top: 40px;
+            z-index: 10004;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="k-overlay"></div>
+    <div class="k-widget k-window">
+        <div class="k-window-titlebar">
+            <span class="k-window-title">View HTML</span>
+            <div class="k-window-actions">
+                <a role="button" href="#" class="k-button k-flat k-button-icon k-window-action">
+                    <span class="k-icon k-i-close"></span>
+                </a>
+            </div>
+        </div>
+        <div class="k-editor-dialog k-popup-edit-form k-viewhtml-dialog k-window-content">
+            <textarea class="k-textarea k-editor-textarea"></textarea>
+            <div class="k-edit-buttons k-state-default">
+                <button class="k-dialog-update k-button k-primary">Update</button>
+                <button class="k-dialog-close k-button">Cancel</button>
+            </div>
+        </div>
+        <div class="k-resize-handle k-resize-n"></div>
+        <div class="k-resize-handle k-resize-e"></div>
+        <div class="k-resize-handle k-resize-s"></div>
+        <div class="k-resize-handle k-resize-w"></div>
+        <div class="k-resize-handle k-resize-se"></div>
+        <div class="k-resize-handle k-resize-sw"></div>
+        <div class="k-resize-handle k-resize-ne"></div>
+        <div class="k-resize-handle k-resize-nw"></div>
+    </div>
+
+</body>
+</html>
