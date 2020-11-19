@@ -1,21 +1,18 @@
 @mixin kendo-combobox--theme() {
 
     .k-combobox {
+        @include fill(
+            var(--kendo-input-text),
+            var(--kendo-input-bg),
+            var(--kendo-input-border)
+        );
 
-        // Normal state
-        .k-dropdown-wrap {
-            @include fill(
-                var(--kendo-combobox-text),
-                var(--kendo-combobox-bg),
-                var(--kendo-combobox-border)
-            );
-        }
         .k-select {
             @include fill(
-                var(--kendo-combobox-select-text),
-                var(--kendo-combobox-select-bg),
-                var(--kendo-combobox-select-border),
-                var(--kendo-combobox-select-gradient)
+                var(--kendo-picker-text),
+                var(--kendo-picker-bg),
+                var(--kendo-picker-border),
+                var(--kendo-picker-gradient)
             );
         }
 
@@ -23,43 +20,42 @@
         // Hover
         &:hover,
         &.k-state-hover {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-combobox-hover-text),
-                    var(--kendo-combobox-hover-bg),
-                    var(--kendo-combobox-hover-border)
-                );
-            }
+            @include fill(
+                var(--kendo-input-hover-text),
+                var(--kendo-input-hover-bg),
+                var(--kendo-input-hover-border)
+            );
+
             .k-select {
                 @include fill(
-                    var(--kendo-combobox-select-hover-text),
-                    var(--kendo-combobox-select-hover-bg),
-                    var(--kendo-combobox-select-hover-border),
-                    var(--kendo-combobox-select-hover-gradient)
+                    var(--kendo-picker-hover-text),
+                    var(--kendo-picker-hover-bg),
+                    var(--kendo-picker-hover-border),
+                    var(--kendo-picker-hover-gradient)
                 );
             }
         }
 
 
         // Focus
-        &:focus,
         &:focus-within,
         &.k-state-focus {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-combobox-focus-text),
-                    var(--kendo-combobox-focus-bg),
-                    var(--kendo-combobox-focus-border)
-                );
-            }
+            @include fill(
+                var(--kendo-input-focus-text),
+                var(--kendo-input-focus-bg),
+                var(--kendo-input-focus-border)
+            );
+            box-shadow: var(--kendo-input-focus-shadow);
+
             .k-select {
                 @include fill(
-                    var(--kendo-combobox-select-focus-text),
-                    var(--kendo-combobox-select-focus-bg),
-                    var(--kendo-combobox-select-focus-border),
-                    var(--kendo-combobox-select-focus-gradient)
+                    var(--kendo-picker-focus-text),
+                    var(--kendo-picker-focus-bg),
+                    var(--kendo-picker-focus-border),
+                    var(--kendo-picker-focus-gradient)
                 );
             }
         }
     }
+
 }

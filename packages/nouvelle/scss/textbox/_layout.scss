@@ -1,0 +1,27 @@
+@mixin kendo-textbox--layout() {
+
+    // Textbox
+    .k-textbox {
+        @extend .k-composite-input !optional;
+    }
+
+
+    // Native textbox
+    input.k-textbox {
+        padding: var(--kendo-input-padding-y) var(--kendo-input-padding-x);
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+            user-select: none;
+        }
+        &:-ms-input-placeholder {
+            color: $input-placeholder-text;
+        }
+    }
+
+}

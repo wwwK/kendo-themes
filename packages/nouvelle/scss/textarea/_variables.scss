@@ -44,48 +44,6 @@ $input-focus-bg: $input-bg !default;
 $input-focus-border: $input-hover-border !default;
 $input-focus-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
-$input-placeholder-text: rgba( $input-text, .5) !default;
-$input-placeholder-opacity: 1 !default;
-
-
-
-
-/// The background of the picker.
-/// @group input
-$picker-bg: $button-bg !default;
-/// The text color of the picker.
-/// @group input
-$picker-text: $button-text !default;
-/// The border color of the picker.
-/// @group input
-$picker-border: $button-border !default;
-$picker-gradient: $button-gradient !default;
-$picker-shadow: null !default;
-
-/// The background of hovered picker.
-/// @group input
-$picker-hover-bg: $button-hover-bg !default;
-/// The text color of hovered picker.
-/// @group input
-$picker-hover-text: $button-hover-text !default;
-/// The border color of hovered picker.
-/// @group input
-$picker-hover-border: $button-hover-border !default;
-$picker-hover-gradient: $button-hover-gradient !default;
-$picker-hover-shadow: null !default;
-
-/// The text color of focus picker.
-/// @group input
-$picker-focus-text: $button-active-text !default;
-/// The background color of focus picker.
-/// @group input
-$picker-focus-bg: $button-active-bg !default;
-/// The border color of focus picker.
-/// @group input
-$picker-focus-border: $button-active-border !default;
-$picker-focus-gradient: $button-active-gradient !default;
-$picker-focus-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
-
 
 
 
@@ -116,22 +74,4 @@ $picker-focus-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, 
     --kendo-input-focus-text: #{$input-focus-text};
     --kendo-input-focus-border: #{$input-focus-border};
     --kendo-input-focus-shadow: #{$input-focus-shadow};
-
-    --kendo-picker-bg: #{$picker-bg};
-    --kendo-picker-text: #{$picker-text};
-    --kendo-picker-border: #{$picker-border};
-    --kendo-picker-gradient: #{$picker-gradient};
-    --kendo-picker-shadow: #{$picker-shadow};
-
-    --kendo-picker-hover-bg: #{$picker-hover-bg};
-    --kendo-picker-hover-text: #{$picker-hover-text};
-    --kendo-picker-hover-border: #{$picker-hover-border};
-    --kendo-picker-hover-gradient: #{$picker-hover-gradient};
-    --kendo-picker-hover-shadow: #{$picker-hover-shadow};
-
-    --kendo-picker-focus-bg: #{$picker-focus-bg};
-    --kendo-picker-focus-text: #{$picker-focus-text};
-    --kendo-picker-focus-border: #{$picker-focus-border};
-    --kendo-picker-focus-gradient: #{$picker-focus-gradient};
-    --kendo-picker-focus-shadow: #{$picker-focus-shadow};
 }

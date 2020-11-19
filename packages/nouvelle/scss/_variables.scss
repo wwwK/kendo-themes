@@ -191,6 +191,28 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 
 
+// Layout
+$grid-cols: 12 !default;
+$grid-rows: 10 !default;
+$grid-gap: 10px !default;
+
+
+// Utility classes force
+// sass-lint:disable indentation
+$utils-classes-force: (
+    "": "",
+    "-f": " !important"
+) !default;
+// sass-lint:enable indentation
+
+
+// Overflow utility classes
+$utils-overflows: () !default;
+$utils-overflows: join(( visible, hidden, clip, scroll, auto ), $utils-overflows);
+
+$utils-overflow-axis: ( "-", "-x-", "-y-" ) !default;
+
+
 // Generic styles
 
 // Root styles

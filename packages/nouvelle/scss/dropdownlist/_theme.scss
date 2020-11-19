@@ -1,41 +1,37 @@
 @mixin kendo-dropdownlist--theme() {
 
     .k-dropdown {
-
-        // Normal state
-        .k-dropdown-wrap {
-            @include fill(
-                var(--kendo-dropdownlist-text),
-                var(--kendo-dropdownlist-bg),
-                var(--kendo-dropdownlist-border)
-            );
-        }
+        @include fill(
+            var(--kendo-picker-text),
+            var(--kendo-picker-bg),
+            var(--kendo-picker-border),
+            var(--kendo-picker-gradient)
+        );
 
 
         // Hover
         &:hover,
         &.k-state-hover {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-dropdownlist-hover-text),
-                    var(--kendo-dropdownlist-hover-bg),
-                    var(--kendo-dropdownlist-hover-border)
-                );
-            }
+            @include fill(
+                var(--kendo-picker-hover-text),
+                var(--kendo-picker-hover-bg),
+                var(--kendo-picker-hover-border),
+                var(--kendo-picker-hover-gradient)
+            );
         }
 
 
         // Focus
-        &:focus,
         &:focus-within,
         &.k-state-focus {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-dropdownlist-focus-text),
-                    var(--kendo-dropdownlist-focus-bg),
-                    var(--kendo-dropdownlist-focus-border)
-                );
-            }
+            @include fill(
+                var(--kendo-picker-focus-text),
+                var(--kendo-picker-focus-bg),
+                var(--kendo-picker-focus-border),
+                var(--kendo-picker-focus-gradient)
+            );
+            box-shadow: var(--kendo-picker-focus-shadow);
         }
     }
+
 }
