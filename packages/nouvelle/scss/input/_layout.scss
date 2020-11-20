@@ -16,17 +16,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
 
-        // Hide clear icon
-        &::-ms-clear { display: none; }
-
         // Placeholder text
         &::placeholder {
             color: $input-placeholder-text;
             opacity: $input-placeholder-opacity;
             user-select: none;
-        }
-        &:-ms-input-placeholder {
-            color: $input-placeholder-text;
         }
     }
 
@@ -66,11 +60,13 @@
 
     // Clear value
     .k-clear-value {
+        padding: var(--kendo-input-padding-y);
+        flex-shrink: 0;
+        align-self: center;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
         cursor: pointer;
         opacity: .5;
 

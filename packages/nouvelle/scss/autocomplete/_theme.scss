@@ -7,28 +7,26 @@
             var(--kendo-input-bg),
             var(--kendo-input-border)
         );
+        box-shadow: var(--kendo-input-shadow, none);
 
 
         // Hover
         &:hover,
         &.k-state-hover {
-            @include fill(
-                var(--kendo-input-hover-text),
-                var(--kendo-input-hover-bg),
-                var(--kendo-input-hover-border)
-            );
+            --kendo-input-bg: var(--kendo-input-hover-bg);
+            --kendo-input-text: var(--kendo-input-hover-text);
+            --kendo-input-border: var(--kendo-input-hover-border);
+            --kendo-input-shadow: var(--kendo-input-hover-shadow, none);
         }
 
 
         // Focus
         &:focus-within,
         &.k-state-focus {
-            @include fill(
-                var(--kendo-input-focus-text),
-                var(--kendo-input-focus-bg),
-                var(--kendo-input-focus-border)
-            );
-            box-shadow: var(--kendo-input-focus-shadow);
+            --kendo-input-bg: var(--kendo-input-focus-bg);
+            --kendo-input-text: var(--kendo-input-focus-text);
+            --kendo-input-border: var(--kendo-input-focus-border);
+            --kendo-input-shadow: var(--kendo-input-focus-shadow, none);
         }
     }
 
