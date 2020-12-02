@@ -349,7 +349,6 @@
         position: relative;
         padding: $time-list-padding 0;
         text-align: center;
-        min-width: $time-list-width;
         height: $time-list-height;
         flex: 1 1 auto;
 
@@ -407,7 +406,6 @@
 
         > ul {
             height: auto;
-            width: $time-list-width;
             margin: auto;
         }
 
