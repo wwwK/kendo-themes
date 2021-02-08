@@ -1,7 +1,7 @@
 ---
 title: Customizing Icons
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-category: "Getting Started"
+category: getting-started
 position: 3
 ---
 

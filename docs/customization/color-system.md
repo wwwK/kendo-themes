@@ -1,7 +1,7 @@
 ---
 title: Sass variables
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-category: "Customization"
+category: customization
 position: 2
 ---
 

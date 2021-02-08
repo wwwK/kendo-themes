@@ -1,7 +1,8 @@
 ---
 title: Charts
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-category: "Components"
+category: components
+position: 1
 ---
 
 # Charts

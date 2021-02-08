@@ -1,7 +1,7 @@
 ---
 title: Installation
 description: "Preview and install the Kendo UI Default theme and style the Kendo UI components in Angular and React projects."
-category: "Getting Started"
+category: getting-started
 position: 2
 ---
 

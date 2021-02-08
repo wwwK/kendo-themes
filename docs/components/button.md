@@ -1,7 +1,7 @@
 ---
 title: Buttons
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-category: "Components"
+category: components
 ---
 
 # Button
@@ -14,3 +14,6 @@ category: "Components"
         .k-button { outline: none; }
     </style>
 ```
+
+
+@import "packages/$theme/button/colors.md"
