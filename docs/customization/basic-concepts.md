@@ -1,9 +1,8 @@
 ---
-title: Customization
+title: Basic Concepts
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-slug: basic_concepts
-category: customization
-position: 9
+category: "Customization"
+position: 1
 ---
 
 # Customization

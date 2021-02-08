@@ -1,9 +1,8 @@
 ---
-title: Customizing Color System
+title: Sass variables
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-slug: color-system
-category: customization
-position: 9
+category: "Customization"
+position: 2
 ---
 
 # Customizing Color System

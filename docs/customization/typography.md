@@ -1,8 +1,7 @@
 ---
-title: Customizing Typography
+title: Typography
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
-slug: typography
-category: customization
+category: "Customization"
 position: 3
 ---
 

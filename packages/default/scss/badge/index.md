@@ -1,8 +1,8 @@
 ---
 title: Badge
 description: Description for Badge article.
-group: components
 slug: index
+category: getting_started
 position: 2
 ---
 
