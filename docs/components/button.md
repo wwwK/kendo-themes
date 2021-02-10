@@ -4,16 +4,21 @@ description: "Refer to the list of the Kendo UI Default theme variables availabl
 category: components
 ---
 
-# Button
+# Html Markup
 
 
 ```html
     <button class='k-button k-button-primary'></button>
-
-    <style>
-        .k-button { outline: none; }
-    </style>
 ```
 
+# Imported Variables From Theme
 
-@import "packages/$theme/button/colors.md"
+<import component="button" file="index"></import>
+
+# Imported Other File From Theme
+
+<import component="button" file="test"></import>
+
+# Not Found
+
+<import component="button" file="test2"></import>
