@@ -104,4 +104,6 @@ npm install --save @progress/kendo-theme-material
    1. Item 3b
 
 
+## Next Article
+* [Customizing Icons](../icons/)
 

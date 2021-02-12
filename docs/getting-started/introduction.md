@@ -33,3 +33,7 @@ To simultaneously preview multiple components from different packages, to build 
 * [Styling the Kendo UI Components](https://themebuilder.telerik.com/)
 * [Kendo UI Font Icons](https://themebuilder.telerik.com/)
 * [Kendo UI Theme Builder](https://themebuilder.telerik.com/)
+
+## Next Article
+* [Installation](../installation/)
+

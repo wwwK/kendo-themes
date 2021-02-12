@@ -74,3 +74,5 @@ The following table lists the available variables for customization.
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
 
+## Next Article
+* [Sass variables](../color-system/)
