@@ -194,11 +194,5 @@ General information about Badge.
 
 <import component="badge" file="index"></import>
 
-
-```html
-    <button class='k-button k-button-primary'></button>
-
-    <style>
-        .k-button { outline: none; }
-    </style>
-```
+## Theme Variables
+<import component="badge" file="variables"></import>
