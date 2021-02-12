@@ -8,7 +8,7 @@ position: 2
 
 ## Badge Bootstrap Theme Variables
 
-<demo language="scss">
+``` scss
 $badge-padding-x: $badge-padding-x !default;
 $badge-padding-y: $badge-padding-y !default;
 $badge-border-width: 1px !default;
@@ -44,5 +44,4 @@ $badge-fixed-size-lg: 30px !default;
 $badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
 $badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
 $badge-dot-size-lg: 12px;
-
-</demo>
+```

@@ -11,16 +11,15 @@ General information about Badge.
 ## Example preview and markup
 
 <demo language="html">
-    <span class="k-badge k-badge-md k-badge-solid k-badge-primary">9+</span>
+    <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-pill">9+</span>
 </demo>
 
 ``` html
-<span class="k-badge k-badge-md k-badge-solid k-badge-primary">9+</span>
+<span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-pill">
+    9+
+</span>
 ```
-
-## Theme Specific info
 
 <import component="badge" file="index"></import>
 
-## Theme Variables
 <import component="badge" file="variables"></import>
