@@ -18,7 +18,7 @@ const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/sass');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/embedFile');
 const { logger, colors } = require("@progress/kendo-theme-tasks/utils");
 const { getArg } = require("./scripts/utils");
-const { utilsDocs } = require('./scripts/utils-docs/generate-utils-docs');
+const { utilsDocs } = require('@progress/kendo-theme-tasks/docs');
 
 
 // Settings
@@ -213,10 +213,13 @@ gulp.task("docs:check", function() {
         }
     });
 });
-// #endregion
 
-
-// #region Utility docs
+/**
+ * Generates documentation for the utility classes.
+ *
+ * @example npm run utils-docs
+ * @example gulp utils-docs
+ */
 gulp.task("utils-docs", function( done ) {
     utilsDocs();
     done();
